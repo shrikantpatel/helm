@@ -1,0 +1,17 @@
+
+minikube start
+minikube stop
+minikube delete
+minikube ssh
+
+kubectl get pods -A
+
+helm install mydb bitnami/mysql --values (pass value file to set root password)
+helm status mydb
+helm list
+helm uninstall mydb
+helm upgrade mydb (pass value file for root password)
+
+helm workflow ->
+* load the chart and its dependencies 
+* parse the values.yaml
